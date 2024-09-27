@@ -11,7 +11,7 @@ import com.example.aboutme.R
 import com.example.aboutme.model.AboutMe
 
 class AboutMeAdapter(private val data: List<AboutMe>):
-    RecyclerView.Adapter<AboutMeAdapter.AboutMeViewHolder() {
+    RecyclerView.Adapter<AboutMeAdapter.AboutMeViewHolder>() {
 
     class AboutMeViewHolder(private val row: View): RecyclerView.ViewHolder(row){
         val image: ImageView = row.findViewById<ImageView>(R.id.image)

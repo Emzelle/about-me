@@ -1,5 +1,6 @@
 package com.example.aboutme
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -28,12 +29,15 @@ class MainActivity : AppCompatActivity() {
             R.drawable.aboutme,
             name = "Emzelle Xylle D. Awal",
             desc = "I am a very carefree person.",
-            {/* TODO */ })
+            { view ->
+                val intent = Intent(this, AboutEmzelleActivity::class.java)
+                startActivity(intent)
+            })
 
         val aboutme2 = AboutMe(
             R.drawable.aboutme,
-            name = "Emzelle Xylle D. Awal",
-            desc = "I am a very carefree person.",
+            name = "Hu Tao",
+            desc = "mischievous personality and playful love of the afterlife.",
             {/* TODO */ })
 
         val arrList = listOf(aboutme1, aboutme2)
