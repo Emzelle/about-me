@@ -35,10 +35,13 @@ class MainActivity : AppCompatActivity() {
             })
 
         val aboutme2 = AboutMe(
-            R.drawable.aboutme,
+            R.drawable._reis_icons_,
             name = "Hu Tao",
             desc = "mischievous personality and playful love of the afterlife.",
-            {/* TODO */ })
+            { view ->
+                val intent = Intent(this, AboutHuTaoActivity::class.java)
+                startActivity(intent)
+            })
 
         val arrList = listOf(aboutme1, aboutme2)
 
